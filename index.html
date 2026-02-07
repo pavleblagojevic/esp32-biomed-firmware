@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generator biomedicinskih signala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Generator biomedicinskih signala</h1>
+    <p class="subtitle">Klikom na dugme šalješ OTA URL na MQTT topic: <b>ECG</b></p>
+
+    <div class="status-box">
+      <span class="status-label">Status:</span>
+      <span id="status" class="status">Povezivanje...</span>
+    </div>
+
+    <div class="card">
+      <label for="firmwareUrl">Unesi svoj OTA URL (http/https):</label>
+      <input id="firmwareUrl" type="text" placeholder="https://pavleblagojevic.github.io/esp32-biomed-firmware/naziv_fajla.bin">
+      <button id="sendUrlBtn" class="btn btn-blue">Pošalji OTA URL</button>
+    </div>
+
+    <div class="card">
+      <h3>Brze verzije firmware-a</h3>
+      <div class="buttons-col">
+        <button class="btn btn-green" id="btn1">Wolff–Parkinson–White sindrom (WPW)</button>
+        <button class="btn btn-green" id="btn2">Atrijalna fibrilacija</button>
+        <button class="btn btn-green" id="btn3">Bigeminija</button>
+        <button class="btn btn-green" id="btn4">Supraventrikularna tahikardija (SVT)</button>
+        <button class="btn btn-green" id="btn5">Ventrikularna fibrilacija</button>
+      </div>
+    </div>
+
+    <div class="log-box">
+      <h3>Log</h3>
+      <pre id="log"></pre>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

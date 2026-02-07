@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: #111827;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+  h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    color: #94a3b8;
+    margin-bottom: 20px;
+  }
+  
+  .status-box {
+    background: #0b1220;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .status-label {
+    font-weight: bold;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .card {
+    background: #0b1220;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-size: 14px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    background: #111827;
+    color: #e2e8f0;
+    outline: none;
+    margin-bottom: 12px;
+  }
+  
+  input:focus {
+    border-color: #2563eb;
+  }
+  
+  .buttons-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s ease;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    transform: scale(1.02);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-blue {
+    background: #2563eb;
+  }
+  
+  .btn-green {
+    background: #16a34a;
+  }
+  
+  .log-box {
+    background: #0b1220;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+  
+  .log-box h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #cbd5e1;
+  }
+  
+  #log {
+    height: 180px;
+    overflow-y: auto;
+    font-size: 13px;
+    color: #94a3b8;
+    white-space: pre-wrap;
+  }
+  
