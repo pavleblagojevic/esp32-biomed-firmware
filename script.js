@@ -1,6 +1,6 @@
 // ===== MQTT SETTINGS =====
 // port: MQTT 8003
-const MQTT_BROKER_URL = "ws://broker.emqx.io:8083/mqtt";
+const MQTT_BROKER_URL = "wss://broker.emqx.io:8083/mqtt";
 const TOPIC = "ECG";
 
 const options = {
